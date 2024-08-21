@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Map</title>
+    <link rel="stylesheet" href="leaflet/leaflet.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Інтерактивна мапа</h1>
+    <div id="map"></div>
+    <div id="admin-panel" style="display: none;">
+        <h2>Додавання мітки</h2>
+        <form id="marker-form">
+            <label for="lat">Широта:</label>
+            <input type="text" id="lat" required>
+            <label for="lng">Довгота:</label>
+            <input type="text" id="lng" required>
+            <label for="title">Заголовок:</label>
+            <input type="text" id="title" required>
+            <label for="description">Опис:</label>
+            <textarea id="description" required></textarea>
+            <button type="submit">Додати мітку</button>
+        </form>
+    </div>
+    <script src="leaflet/leaflet.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

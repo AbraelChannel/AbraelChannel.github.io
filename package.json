@@ -1,0 +1,36 @@
+{
+  "name": "my_map_desktop_project",
+  "version": "1.0.0",
+  "description": "Desktop application with interactive map and admin panel",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "electron": "^22.0.0",
+    "electron-updater": "^4.6.0",
+    "socket.io-client": "^4.4.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^22.14.13"
+  },
+  "build": {
+    "appId": "com.yourapp.id",
+    "productName": "YourMapApp",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "your-github-username",
+        "repo": "your-repo-name"
+      }
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
+    "directories": {
+      "buildResources": "build"
+    }
+  }
+}
